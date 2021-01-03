@@ -8,7 +8,7 @@ services:
     volumes:
       - $HOME/reliable_home/mysql_data:/var/lib/mysql
   web:
-    image: macacajs/reliable-web:v2
+    image: arvingrep/reliable-web:latest
     restart: always
     depends_on:
       - mysql
